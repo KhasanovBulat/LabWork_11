@@ -12,7 +12,7 @@ namespace LabWork_11
         public string creatorName;
         public byte creatorExpereience;
         static public Hashtable hashTable = new Hashtable();
-        private Creator(string creatorName, byte creatorExpereience)
+        public Creator(string creatorName, byte creatorExpereience)
         {
             this.creatorName = creatorName;
             this.creatorExpereience = creatorExpereience;
@@ -36,5 +36,6 @@ namespace LabWork_11
             hashTable.Remove(BuildingID);
         }
 
+       
     }
 }

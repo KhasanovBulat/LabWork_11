@@ -11,7 +11,7 @@ namespace LabWork_11
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Задание 1");
+            Console.WriteLine("Задание 11.1");
             BankFactory bankFactory = new BankFactory();
             int creditAccountNumber = bankFactory.CreateAccount(1000, 7.5, "Иван");
             int regularAccountNumber = bankFactory.CreateAccount(1000, 3);
@@ -32,8 +32,14 @@ namespace LabWork_11
                 Console.WriteLine(bankFactory.hashTable[accountNumber].ToString());
             }
 
-            Console.WriteLine("Задание 2");
+            Console.WriteLine("Домашнее Задание 11.1");
+            Console.Write("Введите ID здания ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите высоту здания:");
+            double h = Convert.ToDouble(Console.ReadLine());
+            Building b = new Building(id, h);
             Creator creator_1 = new Creator("Иван",10);
+            //creator_1.CreateBuild();
             
 
         }
